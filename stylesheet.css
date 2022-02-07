@@ -7,7 +7,7 @@
 html{
     color: #222;
     font-family: "Josefin Sans";
-    font-size: large;
+    font-size: 19px;
     line-height: 1.5;
 }
 body{
@@ -41,6 +41,11 @@ p{
 ul{
     list-style: none;
 }
+
+.skills li + li{
+    margin-top: 0.5rem;
+}
+
 
 section + section{
     margin-top: 2rem;
