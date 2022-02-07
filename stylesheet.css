@@ -1,0 +1,135 @@
+*{
+    margin : 0;
+    padding : 0;
+    box-sizing: border-box;
+}
+
+html{
+    color: #222;
+    font-family: "Josefin Sans";
+    line-height: 1.5;
+}
+body{
+    padding: 2.6rem 3rem;
+    background: linear-gradient(to bottom,#FCEBE0,#DFE0DA);
+}
+h1{
+    font-size: 2rem;
+    text-transform: uppercase;
+}
+
+h2{
+    font-size: 1.2rem;
+    border-top: 1px solid #666;
+    border-bottom: 1px solid #666;
+    padding: 0.65rem 0;
+    text-transform: uppercase;
+    margin-bottom: 2rem;
+}
+
+h3{
+    text-transform: uppercase;
+    color: salmon;
+    font-size: 1rem;
+}
+
+p{
+    line-height: 1.5;
+}
+
+ul{
+    list-style: none;
+}
+
+section + section{
+    margin-top: 2rem;
+}
+
+a{
+    text-decoration: none;
+    color: inherit;
+    
+}
+
+.profile{
+    text-align: center;
+}
+.profile img{
+    border-radius: 900px;
+    width: 15rem;
+    height: 15rem;
+}
+
+.profile p{
+    color: #888;
+    margin-bottom: 1rem;
+    font-size: 1.25rem;
+}
+
+/* 2rem margin-bottom given in h2; */
+.contact ul{
+    margin-top: -2rem; 
+}
+.contact li{
+    text-align: right;
+    padding: 0.55rem;
+    /* //border-top: 1px solid #666; */
+    border-bottom: 1px solid #666;
+    text-transform: uppercase;
+    color: #888;
+}
+
+.contact{
+    font-size: 0.8rem;
+}
+
+/* li + li {
+    margin-top: 0.5rem;
+} */
+
+.skills > ul{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 1rem;
+}
+
+.event{
+    display: grid;
+    grid-template-columns: 0.03fr 1fr;
+}
+
+.content{
+    margin-bottom: 1.5rem;
+}
+
+.content{
+    border-left: 2px solid #888;
+    padding-left: 1rem;
+    margin-left: 1rem;
+}
+
+.content > h3+p{
+    margin-bottom: 0.8rem;
+}
+.CGPA{
+    color : #777;
+}
+.content > h3+p{
+    color : #666;
+}
+
+
+.resume{
+    display: grid;
+    grid-template-columns: 40% 1fr;
+    grid-gap: 4rem;
+    background-color: white;
+    padding: 3rem;
+}
+
+.social ul li{
+    color: #444;
+}
+/* .social ul a{
+    color: black;
+} */
