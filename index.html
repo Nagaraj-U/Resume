@@ -11,12 +11,26 @@
 
         <style>
             @import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap');
+            
         </style>
         <script defer src="/fontawesome-free-5.15.4-web/js/all.js"></script> 
     </head>
     <body>
+
         
+        <div class="navbar">
+            <ul>
+                <li><a href="#education">Education</a></li>
+                <li><a href="#experience">Experience</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <li><a href="#achievements">Achievements</a></li>
+                <li><a href="#certificates">Certificates</a></li>
+            </ul>
+        </div>
         <div class="resume">
+
+            
             <div class="column">
                 <section class="profile">
                     <h1>Nagaraj U</h1>
@@ -25,48 +39,60 @@
                     
                 </section>
 
-                <section class="contact"> 
+                <section class="contact" id="contact"> 
                     <h2>Contact</h2>
-                    <ul>
-                        
-                        <li>
-                            <span>MSRIT Mattikere , Bangalore , 560054</span>
-                        </li>
+                    <div class="contact-grid">
 
-                        <li>
-                            <a href="https://nagaraj-u.github.io/my-portfolio/">My Portfolio</a>
-                        </li>
+                        <div class="contact-item">
+                            <span class="fa fa-home fa-2x"></span>
+                            <span class="contact-info">MSRIT Mattikere Bangalore. 560054</span>
+                        </div>
 
-                        <li>
-                            <a href="mailto:nagarajullegaddi01@gmail.com">nagarajullegaddi01@gmail.com
-                            </a>
-                        </li>
+                        <div class="contact-item">
+                            <span class="fa fa-envelope fa-2x"></span>
+                            <span class="contact-info"><a href="mailto:nagarajullegaddi01@gmail.com">nagarajullegaddi01@gmail.com</a></span>
+                            
+                        </div>
 
-                        <li>
-                            <a href="tel:9071532974">
-                                (+91) 9071532974
-                            </a>
-                        </li>
+                        <div class="contact-item">
+                            <span class="fa fa-phone fa-2x"></span>
+                            <span class="contact-info"><a href="tel:9071532974"><span class="mobile">+91 9071532974</span></a></span>
+                        </div>
 
-                    </ul>
+                        <div class="contact-item">
+                            <span class="fa fa-link fa-2x"></span>
+                            <span class="contact-info"><a href="https://nagaraj-u.github.io/my-portfolio/">Go to Portfolio</a></span>
+                        </div>
+
+                    </div>
+                    
                 </section>
 
-                <section class="bio">
+                <section class="bio" id="bio">
                     
                     <p>Information Technology enthusiast keenly interested in developing and deploying applications. Enthusiastic about solving
                     problems and contribute meaningfully to the organizations I work with.</p>
                 </section>
 
-                <section class="social">
-                    <ul>
-                        <li><a href="https://www.instagram.com/">Instagram : @_nagaraj_u</a>
-                        </li>
-                        <li><a href="https://www.linkedin.com/in/nagaraj-u-999917176/">LinkedIn : @nagaraj-u-999917176</a></li>
-                        <li><a href="https://github.com/Nagaraj-U">Github : @Nagaraj-U</a></li>
-                    </ul>
+                <section class="social" id="social">
+
+                    <div class="social-group">
+                        <div class="social-item">
+                            <span class="fab fa-github fa-fw"></span><a href="https://github.com/Nagaraj-U/" >Github : @Nagaraj-U</a>
+                        </div>
+
+                        <div class="social-item">
+                            <span class="fab fa-linkedin fa-1x"></span><a href="https://www.linkedin.com/in/nagaraj-u-999917176/">LinkedIn : @Nagaraj U</a>
+                        </div>
+                        
+                        <div class="social-item">
+                            <span class="fab fa-instagram fa-1x"></span></span><a href="https://www.instagram.com/_nagaraj_u/">Instagram : @_nagaraj_u</a>
+                        </div>
+                    </div>
+        
                 </section>
 
-                <section class="skills">
+                <section class="skills" id="skills">
                     <h2>Skills</h2>
                     <ul>
                         <li>
@@ -92,10 +118,26 @@
                         </li>
                     </ul>
                 </section>
+
+                <section class="certificates" id="certificates">
+                    <h2>Certificates</h2>
+                    <ul>
+                        <li>.Google Cloud
+                            Completed Google Cloud Computing hands on labs and earned
+                            quest badge and skill badges.</li>
+                        <li>Competitive Programming
+                            Certificate of Excellence from Coding Ninjas ( Top Performer </li>
+                        <li>. Full Stack Web Development
+                            MERN stack course offered by Colt Steele - UDEMY</li>
+                        <li>App development with flutter. Offered by Angela Yu - UDEMY</li>
+                    </ul>
+                </section>
+
+                
             </div>
 
             <div class="column">
-                <section class="education">
+                <section class="education" id="education">
                     <h2>Education</h2>
                     <ul class="timeline">
                         <li class="event"> 
@@ -143,7 +185,7 @@
                     </ul>
                 </section>
 
-                <section class="experience">
+                <section class="experience" id="experience">
                     <h2>Experience</h2>
                     <ul class="timeline">
 
@@ -187,6 +229,25 @@
                         </li>
                     </ul>
                 </section>
+
+                <section class="achievements" id="achievements">
+                    <h2>Achievements</h2>
+                    <ul>
+                        <li>Code Avengers - <span>IEEE RIT
+                            Winner of the intra college coding contest hosted by IEEE RIT.</span></li>
+                        <li>Lowe's India Codeathon
+                            <span>Finalist, Among top 3% of total (70,000+) participants.</span></li>
+                        <li>Code Storm - UVCE Bangalore
+                            <span>Finished in Top 5 in the inter college coding contest.</span></li>
+                        <li>Code Kaze 2021 - Coding Ninjas
+                            <span>Shortlisted for Final round in all India coding contest.(Top 10%)</span></li>
+                        <li>
+                            Global 73rd rank in Leetcode biweekly contest 251
+                            <span>Finished in 73rd position in leetcode contest 251.</span>
+                        </li>
+                    </ul>
+                </section>
+                
             </div>
         </div>
         

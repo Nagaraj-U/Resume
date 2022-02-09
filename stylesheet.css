@@ -1,3 +1,5 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Architects+Daughter&family=Merriweather+Sans&family=Montserrat:wght@400;600;700&display=swap');
 *{
     margin : 0;
     padding : 0;
@@ -13,6 +15,44 @@ html{
 body{
     padding: 2.6rem 3rem;
     background: linear-gradient(to bottom,#FCEBE0,#DFE0DA);
+}
+
+.resume{
+    display: grid;
+    grid-template-columns: 40% 1fr;
+    grid-gap: 4rem;
+    background-color: white;
+    padding: 3rem;
+}
+.navbar{
+    margin-top: -2.6rem;
+    padding: 1rem;
+    background-color: #eee;
+    position: fixed;
+    right: 3rem;
+    left: 3rem;
+    
+    font-family: "Merriweather Sans",sans-serif;
+    font-family: "Montserrat", sans-serif;
+   
+    font-weight: 600;
+}
+.navbar ul{
+    display: flex;
+    justify-content: space-between;
+    margin-left: 32rem;
+}
+.navbar li{
+    color: teal;
+    display: inline-block;
+}
+
+.navbar li a:hover {
+    color: black;
+}
+
+.navbar li a:hover{
+    transition: all 0.3s ease-in 0s;
 }
 h1{
     font-size: 2rem;
@@ -66,32 +106,87 @@ a{
     height: 15rem;
 }
 
+
 .profile p{
     color: #888;
     margin-bottom: 1rem;
     font-size: 1.25rem;
 }
 
-/* 2rem margin-bottom given in h2; */
-.contact ul{
+/* CURRENT WORKING AREA */
+.contact-grid .contact-info{
+    /* position: relative; */
+    /* float: left; */
+    text-transform: uppercase;
+    margin-left: 17px;
+}
+
+
+.contact-item{
+    border-bottom: 1px solid #666;
+    margin-bottom: 1rem;
+}
+
+.contact-item:first-child{
+    margin-top: -1rem;
+}
+
+.contact-item{
+    padding-bottom: 4px;
+}
+
+
+/* .contact ul{
     margin-top: -2rem; 
 }
+
 .contact li{
     text-align: right;
     padding: 0.55rem;
-    /* //border-top: 1px solid #666; */
     border-bottom: 1px solid #666;
     text-transform: uppercase;
     color: #888;
-}
+} */
 
 .contact{
     font-size: 0.8rem;
 }
 
+.contact-item{
+    color: teal;
+}
+
+.contact-item:hover{
+    transition: all 0.5s ease-in 0s;
+    color: inherit;
+}
+.contact-grid .mobile{
+    font-size: 18px;
+}
 /* li + li {
     margin-top: 0.5rem;
 } */
+
+.social-group{
+    width: 400px;
+    border-radius: 10px;
+    background-color: #eee;
+
+}
+.social-item{
+    color: teal;
+    width: 100%;
+    padding: 9px;
+    display: block;
+}
+.social-item>a{
+    margin-left: 1rem;
+}
+
+.social-item:hover{
+    color: inherit;
+}
+
 
 .skills > ul{
     display: grid;
@@ -124,18 +219,33 @@ a{
     color : #666;
 }
 
-
-.resume{
-    display: grid;
-    grid-template-columns: 40% 1fr;
-    grid-gap: 4rem;
-    background-color: white;
-    padding: 3rem;
+.social ul li a:hover{
+    transition: all 0.2s ease-in 0s;
 }
-
 .social ul li{
     color: #444;
+    
 }
 /* .social ul a{
     color: black;
 } */
+
+.achievements ul{
+    list-style: disc;
+    margin-left: 10px;
+}
+
+.achievements li{
+    margin-bottom: 1rem;
+}
+
+.achievements span{
+    color: #666;
+}
+
+.certificates li{
+    list-style: disc;
+    margin-bottom: 1rem;
+    margin-left: 8px;
+    color: #444;
+}
