@@ -14,11 +14,91 @@ html{
 }
 
 
-body{
+/* body{
     padding: 2.6rem 3rem;
     background: linear-gradient(to bottom,#FCEBE0,#DFE0DA);
+} */
+
+nav{
+    height: 80px;
+    margin-bottom: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0px 50px 0px 100px;
+    background: #1b1b1b;
 }
 
+nav .logo{
+    font-size: 30px;
+    font-weight: 600;
+    color: whitesmoke;
+}
+nav .clickbtn i{
+    color: white;
+    font-size: 23px;
+    cursor: pointer;
+    display: none;
+}
+nav ul{
+    display: flex;
+}
+
+nav ul li{
+    margin: 0px 10px;
+}
+
+nav ul li a{
+    color: whitesmoke;
+    font-size: 24px;
+    font-weight: 500;
+    letter-spacing: 0.5px;
+    padding: 8px 10px;
+}
+
+nav ul li a:hover{
+    color: salmon;
+    transition: all 0.3s ease-in;
+}
+
+@media (max-width : 1150px) {
+
+    nav .clickbtn i{
+        display: block;
+    }
+
+    nav ul{
+        position: fixed;
+        top : 80px;
+        left: 0px;
+        height: 100vh;
+        width: 100%;
+        display: block;
+        background: #111;
+        text-align: center;
+        left: -100%;
+    }
+
+    #click:checked ~ ul{
+        left : 0%;
+        transition: all 0.3s ease-in;
+    }
+   
+    nav ul li{
+        margin-top: 40px;
+    }
+
+    nav ul li a{
+        font-size: 25px;
+        font-weight: 600;
+        display: block;
+        
+    }
+    nav ul li a:hover{
+        color: cyan;
+        transition: all 0.3s ease-in;
+    }
+}
 .resume{
     display: grid;
     grid-template-columns: 40% 1fr;
@@ -31,7 +111,7 @@ body{
         grid-template-columns: 1fr;
     }
 }
-.navbar{
+/* .navbar{
     margin-top: -2.6rem;
     padding: 1rem;
     background-color: #eee;
@@ -45,14 +125,14 @@ body{
     font-weight: 600;
 }
 .navbar ul{
-    display: flex;
-    justify-content: space-between;
-    margin-left: 32rem;
+    float: right;
 }
-.navbar li{
+
+.navbar ul li{
     color: teal;
     display: inline-block;
 }
+
 
 .navbar li a:hover {
     color: black;
@@ -60,7 +140,8 @@ body{
 
 .navbar li a:hover{
     transition: all 0.3s ease-in 0s;
-}
+} */
+
 h1{
     font-size: 2rem;
     text-transform: uppercase;
