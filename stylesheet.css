@@ -12,6 +12,8 @@ html{
     font-size: 19px;
     line-height: 1.5;
 }
+
+
 body{
     padding: 2.6rem 3rem;
     background: linear-gradient(to bottom,#FCEBE0,#DFE0DA);
@@ -23,6 +25,11 @@ body{
     grid-gap: 4rem;
     background-color: white;
     padding: 3rem;
+}
+@media only screen and (max-width : 950px) {
+    .resume{
+        grid-template-columns: 1fr;
+    }
 }
 .navbar{
     margin-top: -2.6rem;
