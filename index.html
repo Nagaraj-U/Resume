@@ -15,7 +15,17 @@
             
         </style>
         <!-- <script defer src="/fontawesome-free-5.15.4-web/js/all.js"></script>  -->
-        <script src="index.js"></script>
+        <script src="index.js">
+
+        </script>
+        <script>
+            function toggle(){
+            var i = document.querySelector('#click').nodeValue;
+            console.log(i);
+            console.log("hhh")
+            }
+            toggle()
+        </script>
     </head>
     <body>
 
@@ -34,15 +44,15 @@
 
         <nav>
             <div class="logo">RESUME</div>
-            <input type="checkbox" id="click" hidden="true">
+            <input type="checkbox" id="click" hidden="true" value="yes">
             <label for="click" class="clickbtn"><i class="fa fa-bars"></i></label>
             <ul>
-                <li><a href="#education">Education</a></li>
+                <!-- <li><a href="#education">Education</a></li> -->
                 <li><a href="#experience">Experience</a></li>
                 <li><a href="#skills">Skills</a></li>
-                <li><a href="#contact">Contact</a></li>
                 <li><a href="#achievements">Achievements</a></li>
                 <li><a href="#certificates">Certificates</a></li>
+                <li><a href="#contact">Contact</a></li>
             </ul>
         </nav>
         <div class="resume">
